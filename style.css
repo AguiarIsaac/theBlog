@@ -10,6 +10,13 @@ a {
 	text-decoration: none;
 	color: #9E6DC2;
 }
+a:hover {
+	text-decoration: underline;
+}
+
+h3, h4 {
+	color:#290742;
+}
 
 header {
 	background:#290742;
@@ -18,8 +25,9 @@ header {
 
 body{
 	font-family: 'Poppins', sans-serif;
+	margin-bottom: 10rem;
 }
-.container {
+.container, main, #content_cards {
     width: 80vw;
     margin: 0 auto;
     padding-top: 4rem;
@@ -47,9 +55,10 @@ body{
     font-size: 18px;
 }
 
-#links ul li a {
+#links ul li .link_nav {
 	color:white;
 	padding: 2px;
+	text-decoration: none;
 }
 
 #links ul li a:hover {
@@ -116,8 +125,40 @@ section #text_banner p {
 section #link {
 	display: flex;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 section #link img {
 	margin-left: 0.5rem;
+}
+
+section#content {
+	display: flex;
+    justify-content: space-between;
+}
+
+.text_top {
+	margin-top: 1rem;
+}
+
+div.post1 {
+	max-width: 35rem;
+}
+
+div.side-post {
+	max-width: 30rem;
+}
+
+#divider1 {
+	margin-top: 1rem;
+	border-bottom: 1px solid #F2E7FA;
+}
+
+div.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+div.card {
+	max-width: 23rem;
 }
